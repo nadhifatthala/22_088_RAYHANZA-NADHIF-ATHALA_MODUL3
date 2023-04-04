@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+  font-family: "poopins", sans-serif;
+  background-color: white;
+  overflow-x: hidden;
+}
+
+.banner {
+  font-size: 20px;
+  padding: 100px 0px 250px 0px;
+  background-image: url(Modern\ UIUX\ Design\ Facebook\ Ads\ .png);
+  background-size: cover;
+  height: 602px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+
+.navbar {
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  /* border-bottom: 1px solid var(--color-main); */
+  color: white;
+  justify-content: space-around;
+  /* padding: 20px 0; */
+  height: 53px;
+  align-items: center;
+  
+}
+.navbar .logo {
+  color: blueviolet;
+  text-decoration: none;
+  font-style: italic;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.navbar ul {
+    
+  display: flex;
+  list-style: none;
+  width: 30%;
+  justify-content: space-between;
+  
+}
+
+.navbar ul li a {
+  color: var(--color-main);
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+.navbar ul li a:hover {
+  color: #c9bebe;
+}
+
+/* hamburger menu */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.menu-toggle input {
+  position: absolute;
+
+  width: 40px;
+  height: 28px;
+  opacity: 0;
+  left: -5px;
+
+  top: -3px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+/* hamburger menu animation */
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+  transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+  opacity: 0;
+  transform: scale(0);
+}
+
+/* ukuran web */
+
+/* ukuran tablet */
+@media (max-width: 768px) {
+  .navbar ul {
+    width: 50%;
+  }
+}
+/* ukuran phone */
+@media (max-width: 600px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .navbar ul {
+    position: absolute;
+    right: 0;
+    height: 20vh;
+    top: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: cyan;
+    margin-top: 51px;
+    transform: translateX(100%);
+    transition: 0.8s;
+    opacity: 0;
+  }
+
+  .navbar ul.slide {
+    margin-top: 52px;
+    z-index: 1;
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.banner {
+  padding: 100px 0px 250px 0px;
+    font-size: 20px;
+    background-image: url(hmm.jpg);
+    background-size: cover;
+    text-align: left;
+    background-size: cover;
+  height: 100px;
+  }
+
+  
+  
+  .display{
+    background-color: rgba(220, 192, 247, 0.582);
+    display: flex;
+    flex-wrap: wrap;
+    padding :0px 70px 0px 70px;
+    /* padding-left: 10%; */
+  }
+  
+  .paket {
+    width: 260px;
+    padding: 10px;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+  }
+  
+
+  
+  .image {
+    width: 100%;
+  }
+  
+  .harga {
+    Color: #000000;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  
+  .b1 {
+    width: 100%;
+    background-color: #000000ac;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+
+  }
+
+  button{
+
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    font-size: 14px;
+    height: 40px;
+    margin-top: 26px;
+    margin-left: 1px;
+    outline: 0;
+    text-align: center;
+    width: 19%;
+    
+  }
+  .top {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+  .buy {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .b1:hover {
+   opacity: 0.4;
+  }
+
+  table{
+    text-align: center;
+    margin-bottom: 2%;
+  }
+
+.footer{
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: 90px;
+  color: white;
+}
+.footer h1{
+  text-align: center;
+  font-size: 20px;
+  padding-top: 30px;
+}
+
+
+  
